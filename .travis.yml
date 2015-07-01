@@ -1,6 +1,9 @@
 language: scala
 scala:
    - 2.10.4
+env: ISOLATED=true
+sudo: required
+env: BOOTSTRAP_LATEX=1
 # Install R
 before_install:
   - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
